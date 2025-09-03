@@ -5,9 +5,9 @@ import pandas as pd
 
 
 # Streamlit Ui
-st.title("Result Checker Appplcation")
+st.title("Result Checker Appplication")
 
-user_symbol = st.number_input("Enter your Symbol Number")
+user_symbol = st.number_input("Enter your Symbol Number", placeholder="Check your result using symbol number")
 
 df = pd.read_csv("result.csv")
 
