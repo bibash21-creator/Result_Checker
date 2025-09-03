@@ -114,7 +114,7 @@ if st.button("Check Resut"):
 
 
      # Nothing found
-    if not found:
+    elif not found:
      #   st.toast("🧨 Error: Voltage too low!", icon="❌")
        st.snow()
        st.error("If this  is  your Roll Number, you are failed brother. Better luck next  time!")
