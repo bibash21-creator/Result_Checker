@@ -107,17 +107,19 @@ if st.button("Check Resut"):
 
        else:
           st.write("BIT Code not Found.")
+     
+    else:
+        found = False
 
 
      # Nothing found
-    if not  found:
+    if not found:
      #   st.toast("🧨 Error: Voltage too low!", icon="❌")
        st.snow()
        st.error("If this  is  your Roll Number, you are failed brother. Better luck next  time!")
        st.warning("Better check in your typed details if mistyped.")
 
-    else:
-        found = False
+    
     
 
 
