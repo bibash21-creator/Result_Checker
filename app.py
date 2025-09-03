@@ -109,7 +109,7 @@ if st.button("Check Resut"):
      #   st.toast("🧨 Error: Voltage too low!", icon="❌")
        st.snow()
        st.error("If this  is  your Roll Number, you are failed brother. Better luck next  time!")
-       st.warning("Better check your typed details if mistyped.")
+       st.warning("Better check in your typed details if mistyped.")
     
 
 
