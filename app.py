@@ -106,7 +106,8 @@ if st.button("Check Resut"):
 
      # Nothing found
     if not  found:
-       st.warning("If this  is  your symbol nummber, you are failed brother. Better luck next  time!")
+       st.toast("🧨 Error: Voltage too low!", icon="❌")
+       st.error("If this  is  your symbol nummber, you are failed brother. Better luck next  time!")
        st.warning("Student not found. Please check  your input.")
            
     
