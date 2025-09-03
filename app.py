@@ -54,7 +54,7 @@ st.title("Result Checker Appplication")
 
 
 # enter your  roll number
-st.write("Enter your Roll Number or BIT Code to check your reuslt:")
+st.write("Hey Guys! Please enter your Roll Number or BIT Code to check your reuslt:")
 
 
 # User Input
