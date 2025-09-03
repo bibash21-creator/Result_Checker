@@ -64,23 +64,22 @@ user_bit = st.text_input("Enter your BIT Code")
 # Button to check
 if st.button("Check Resut"):
     if user_roll and user_bit:
-        st.error("❌ Please enter **only one**: Roll Number OR BIT Code, not both.")
+        st.error("Please enter **only one**: Roll Number OR BIT Code, not both.")
     elif not user_roll and not user_bit:
-        st.error("❌ Please enter either Roll Number OR BIT Code.")
-    else:
-        found = False
-    found = False
+        st.error("Please enter either Roll Number OR BIT Code.")
+    
+    
 
 
     # Check Roll number
-    if user_roll:
+    elif user_roll:
         try:
           user_roll_num = int(user_roll)
           student = df[roll==user_roll_num]
 
           if not student.empty:
              with st.spinner("Checking..."):
-               st.success("Your are found!")
+               st.success("You are found!")
                st.write(f"Campus: {student['Campus'].values[0]}")
                st.write(f"BIT Code: {student['BIT_Code'].values[0]}")
                st.balloons()
@@ -93,7 +92,7 @@ if st.button("Check Resut"):
         
        
      # Check BIT Code
-    if user_bit:
+    elif user_bit:
        user_bit_code = user_bit.strip()
        student = df[df["BIT_Code"] == user_bit]
 
@@ -116,6 +115,9 @@ if st.button("Check Resut"):
        st.snow()
        st.error("If this  is  your Roll Number, you are failed brother. Better luck next  time!")
        st.warning("Better check in your typed details if mistyped.")
+
+    else:
+        found = False
     
 
 
