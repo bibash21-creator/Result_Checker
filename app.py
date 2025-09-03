@@ -73,11 +73,12 @@ if st.button("Check Resut"):
           student = df[roll==user_roll_num]
 
           if not student.empty:
-             st.success("Your are found!")
-             st.write(f"Campus: {student['Campus'].values[0]}")
-             st.write(f"BIT Code: {student['BIT_Code'].values[0]}")
-             st.balloons()
-             st.success("Congratulations! You have passed brother")
+             with st.spinner("Checking..."):
+               st.success("Your are found!")
+               st.write(f"Campus: {student['Campus'].values[0]}")
+               st.write(f"BIT Code: {student['BIT_Code'].values[0]}")
+               st.balloons()
+               st.success("Congratulations! You have passed brother")
 
              found = True
 
