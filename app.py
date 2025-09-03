@@ -17,7 +17,7 @@ df = pd.read_csv("result.csv")
 if  user_symbol:
    result = df[df["Roll_Num"] == user_symbol]
    if not result.empty:
-        st.success(f"✅ Symbol No. {user_symbol} found in the Pass list!")
+        st.success(f"You are passed lad!")
    else:
-        st.error(f"❌ Symbol No. {user_symbol} not found in the Pass result list.")
+        st.error(f"Better luck next time brother")
 
