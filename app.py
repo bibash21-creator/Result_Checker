@@ -106,6 +106,7 @@ if st.button("Check Resut"):
 
      # Nothing found
     if not  found:
+       st.warning("You are failed brother. Better luck next  time!")
        st.warning("Student not found. Please check  your input.")
            
     
