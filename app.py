@@ -8,8 +8,13 @@ import pandas as pd
 
 
 
+st.cache_data
 
-df = pd.read_csv("result.csv")
+def load_data():
+   
+     return pd.read_csv("result.csv")
+
+df = load_data()
 
 
 
