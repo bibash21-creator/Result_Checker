@@ -79,7 +79,7 @@ if st.button("Check Resut"):
 
           if not student.empty:
              with st.spinner("Checking..."):
-               st.success("You are found!")
+               st.success("We found your data!")
                st.write(f"Campus: {student['Campus'].values[0]}")
                st.write(f"BIT Code: {student['BIT_Code'].values[0]}")
                st.balloons()
