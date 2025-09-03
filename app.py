@@ -37,6 +37,15 @@ st.set_page_config(
     layout="centered"           # Optional: page layout
 )
 
+# Override browser tab title using HTML
+st.markdown(
+    """
+    <script>
+    document.title = "BIT Checker";
+    </script>
+    """,
+    unsafe_allow_html=True
+)
 
 
 # enter your  roll number
