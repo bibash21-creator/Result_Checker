@@ -7,32 +7,13 @@ import pandas as pd
 
 
 
-# user_symbol = st.number_input("Enter your Symbol Number", placeholder="Check your result using symbol number")
 
-# user_code = st.text_input("Enter your BIT code", placeholder="Plz Enter the Details")
 
 df = pd.read_csv("result.csv")
 
 
 
-# # Logical
-# if  user_symbol:
-#    result = df[df["Roll_Num"] == user_symbol]
-#    if not result.empty:
-#         st.success(f"You are passed lad!")
-#         st.balloons
-#    else:
-#         st.error(f"Better luck next time brother")
 
-
-
-# if user_code:
-#     result_code = df[df["BIT_Code"] == str(user_code)]
-#     if not result_code.empty:
-#           st.success(f"You are passed lad!")
-#           st.balloons
-#     else:
-#         st.error(f"Better luck next time brother")
          
 # Clean data
 
