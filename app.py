@@ -30,7 +30,7 @@ campus = df["Campus"].astype(str).str.strip()
 
 
 # Streamlit Ui
-st.title("BIT Result Checker")
+st.title("🎓BIT Result Checker")
 st.set_page_config(
     page_title="BIT Checker",   # This sets the browser tab title
     page_icon="🎓",             # Optional: favicon for your page
