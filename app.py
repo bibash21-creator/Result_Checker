@@ -51,7 +51,6 @@ st.markdown(
 # enter your  roll number
 st.write("Hey Guys! Please enter your Roll Number or BIT Code to ensure your passed or failed status:")
 
-st.write("If you had given back exam, enter your   BIT Code brothers neither just roll number will work")
 
 
 # User Input
