@@ -30,7 +30,7 @@ campus = df["Campus"].astype(str).str.strip()
 
 
 # Streamlit Ui
-st.title("BIT079 Section 33 Result Checker")
+st.title("BIT Result Checker")
 
 
 
