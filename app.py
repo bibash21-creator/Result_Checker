@@ -63,6 +63,12 @@ user_bit = st.text_input("Enter your BIT Code")
 
 # Button to check
 if st.button("Check Resut"):
+    if user_roll and user_bit:
+        st.error("❌ Please enter **only one**: Roll Number OR BIT Code, not both.")
+    elif not user_roll and not user_bit:
+        st.error("❌ Please enter either Roll Number OR BIT Code.")
+    else:
+        found = False
     found = False
 
 
